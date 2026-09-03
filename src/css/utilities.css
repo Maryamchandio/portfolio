@@ -167,7 +167,7 @@ h2::selection {
 /* Media Queries */
 @media (max-width: 768px) {
   .header-container {
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     text-align: center;
   }
 
