@@ -48,6 +48,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* make text and image unselectable */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+}
+
 /* Reset default styling */
 * {
   margin: 0;
