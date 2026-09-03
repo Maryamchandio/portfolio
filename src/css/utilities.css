@@ -132,6 +132,14 @@ h2::selection {
   opacity: 1;
 }
 
+.card.in-view {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.card.in-view .project-info {
+  opacity: 1;
+}
+
 /* Project Images */
 
 /* project 1 */

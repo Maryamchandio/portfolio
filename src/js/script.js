@@ -75,3 +75,18 @@ cards?.forEach((e) => {
     window.open(url, "_blank");
   });
 });
+
+
+// show project info when cards are atleast 30% visible
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("in-view", entry.isIntersecting);
+  });
+}, {
+  threshold: 0.7
+});
+
+document.querySelectorAll(".card").forEach(card => {
+  observer.observe(card);
+});
