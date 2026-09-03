@@ -65,3 +65,12 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+
+// open cards url on click in new tab
+const cards = document.querySelectorAll(".cards");
+cards?.forEach((e) => {
+  e.addEventListener("click", () => {
+    window.open(e.href, "_blank");
+  });
+});
