@@ -68,9 +68,10 @@ myDate.innerHTML = yes;
 
 
 // open cards url on click in new tab
-const cards = document.querySelectorAll(".cards");
+const cards = document.querySelectorAll(".card");
 cards?.forEach((e) => {
   e.addEventListener("click", () => {
-    window.open(e.href, "_blank");
+    const url = e.getAttribute("href");
+    window.open(url, "_blank");
   });
 });
