@@ -64,7 +64,7 @@ if (currentTheme) {
 let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
-myDate?.innerHTML = yes;
+myDate.innerHTML = yes;
 
 
 // open cards url on click in new tab
